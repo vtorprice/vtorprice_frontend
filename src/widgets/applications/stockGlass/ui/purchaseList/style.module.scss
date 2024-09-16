@@ -1,0 +1,18 @@
+.block {
+  @media only screen and (max-width: 601px) {
+    display: none;
+  }
+}
+
+.mobile_block {
+  display: none;
+
+  @media only screen and (max-width: 601px) {
+    display: flex;
+    flex-direction: column;
+
+    & > *:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
